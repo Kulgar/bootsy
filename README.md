@@ -3,6 +3,13 @@
 [![Gem Version](https://badge.fury.io/rb/bootsy.svg)](http://badge.fury.io/rb/bootsy)
 [![Build Status](https://secure.travis-ci.org/volmer/bootsy.svg?branch=master)](http://travis-ci.org/volmer/bootsy)
 
+### Note: this is custom fork with fix for Chrome focus() bug.
+Read more about this issue here [Fix bug in which we could not insert images or links using the editor](https://github.com/jhollingworth/bootstrap-wysihtml5/issues/391).
+
+*Bootsy* is a WYSIWYG editor for Rails based on
+[Bootstrap-wysihtml5](https://github.com/jhollingworth/bootstrap-wysihtml5) with image uploads using
+[CarrierWave](https://github.com/carrierwaveuploader/carrierwave).
+
 ### Disclaimer: this project is no longer maintained.
 
 *Bootsy* is a WYSIWYG editor for Rails based on
