@@ -13,6 +13,7 @@ Bootsy.Modal = function(area) {
 
   this.$el.on('click', '.bootsy-image .insert', function(event) {
     var img, imageObject;
+    var alt = '';
     var imagePrefix = '/' + $(this).attr('data-image-size') + '_';
 
     event.preventDefault();
@@ -22,10 +23,13 @@ Bootsy.Modal = function(area) {
     }
 
     img = $(this).parents('.bootsy-image').find('img');
+    if (img.attr('alt')) {
+      alt = img.attr('alt').replace('Thumb_', '');
+    }
 
     imageObject = {
       src: img.attr('src').replace('/thumb_', imagePrefix),
-      alt: img.attr('alt').replace('Thumb_', '')
+      alt: alt
     };
 
     imageObject.align = $(this).data('position');

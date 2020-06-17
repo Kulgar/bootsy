@@ -26,11 +26,9 @@ Bootsy.init = function() {
 };
 
 /* Initialize Bootsy on document load */
-$(function() {
-  $(window).on('load', function() {
-    Bootsy.init();
+$(window).on('load', function() {
+  Bootsy.init();
 
-    /* Reload Bootsy on page load when using Turbolinks. */
-    document.addEventListener('turbolinks:load', Bootsy.init);
-  });
+  /* Reload Bootsy on page load when using Turbolinks. */
+  document.addEventListener('turbolinks:load', Bootsy.init);
 });
